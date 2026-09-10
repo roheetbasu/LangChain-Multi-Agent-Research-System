@@ -1,4 +1,4 @@
-from SRC.tools.tools import web_search, scrape_url
+from SRC.pipelines.pipelines import run_research_pipelines
 
-r = web_search.invoke("What is the latest research on AI for disater prevention?")
-print(r)
+topic = "The impact of AI on the Job market in 2026"
+run_research_pipelines(topic)
