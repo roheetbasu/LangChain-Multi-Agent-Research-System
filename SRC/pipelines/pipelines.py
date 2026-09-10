@@ -29,9 +29,8 @@ def run_research_pipelines(topic: str):
             f"Search Results:\n{state['search_results'][:800]}"    
             )]
     })
-
     state['scraped_content'] = reader_result['messages'][-1].content
-    print("\nscraped content:  \n", state['scraped_content'])
+    print(f"\nscraped content:  \n {state['scraped_content']}")
     
     # step 3 - writer chain
     print("\n"+"="*50)
